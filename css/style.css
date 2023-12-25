@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root
+{
+    --color-primary: #1A73E8;
+    --color-secundary: rgba(0, 0, 0, 0.822);
+    --color-background: #1a73e80f;
+    --font-primary: 'Poppins', sans-serif;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: black;
+}
+
+
+body header .top-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around   ;
+    flex-direction: row;
+    padding: 20px  0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.23);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+body header .top-header .top-name a
+{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+body header .top-header .top-name a:hover .blue-effect
+{
+    color: var(--color-primary);
+}
+
+body header .top-header nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+body header .top-header nav li
+{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 500;
+    padding: 0 15px;
+    flex-grow: 1;
+    list-style: none;
+}
+
+body header .top-header nav li a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    position: relative;
+    user-select: none;
+}
+
+body header .top-header nav li a::after
+{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--color-primary);
+    height: 4px;
+    width: 0;
+    transform: translateY(-5px);
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body header .top-header nav li a:hover::after
+{
+    width: 100%;
+}
+
+body header .top-header nav li a i
+{
+    font-size: 18px;
+
+}
+
+body header .top-header nav li button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 0.5px solid var(--color-primary);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+body header .top-header nav li button:hover
+{
+    color: white;
+    background-color: var(--color-primary);
+}
+
+body header .top-header nav li button i
+{
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+
+body header .top-header nav li button:hover i
+{
+    color: white;
+}
+
+body header .top-header nav .contacts
+{
+    position: relative;
+}
+
+body header .top-header nav .contacts .contacts-info
+{
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: -101px;
+    left: 0px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.23);
+    padding: 15px 15px;
+    width: 100%;
+
+    animation: openMenu .3s ease-in-out both;
+    z-index: 2;
+}
+
+@keyframes openMenu {
+    from
+    {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.ph-caret-up{
+    transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+main section .about
+{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--color-background);
+    padding: 230px 0;
+    gap: 95px;
+}
+
+main section .about .about-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 660px;
+    
+}
+
+main section .about .about-content h1
+{
+    font-size: 3.5em;
+    line-height: 63px;
+    color: var(--color-secundary);
+}
+
+main section .about .about-content h1 span
+{
+    color: var(--color-primary);
+}
+
+main section .about .about-content p 
+{
+    margin-top: 25px;
+    color: var(--color-secundary);
+    font-size: 20px;
+
+}
+
+main section .about .about-content .socials
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px;
+    gap: 15px;
+}
+
+main section .about .about-content .socials a i
+{
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+main section .about .about-content .socials a i:hover
+{
+    color: var(--color-primary);
+}
+
+
+main section .about .my-photo
+{
+    position: relative;
+    min-width: 22em;
+    height: 22em;
+    object-fit: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+}
+
+main section .about .my-photo .shape
+{
+    width: 100%;
+    height: 100%;
+    background-color: #1a73e89e;
+    position: absolute;
+    
+    border-radius: 48% 52% 42% 58%/54% 46% 54% 46%;
+    outline: 10px solid var(--color-primary);
+    opacity: 0.7;
+    animation: photo_rotate 7s linear infinite ;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+main section .about .my-photo:hover .shape
+{
+    opacity: 1;
+}
+
+@keyframes photo_rotate {
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+main section .aboute-me
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+main section .aboute-me .technologies
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transform: translateY(-7px);
+}
+
+main section .aboute-me .technologies > span
+{
+    font-weight: bold;
+    font-size: 20px;
+    border-right: 3px solid black;
+    padding-right: 15px;
+    margin-right: 60px;
+}
+
+main section .aboute-me .technologies .technologies-options
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    
+}
+
+main section .aboute-me .technologies .technologies-options .img-technologies
+{
+    border-radius: 50%;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main section .aboute-me .technologies .technologies-options .img-technologies span
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transform: translateY(-10px);
+    transition: all .1s ease-in-out;
+    white-space: nowrap;
+}
+
+main section .aboute-me .technologies .technologies-options .img-technologies span.show-tecnologies
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:show_technologies .1s ease-in-out both;
+}
+
+@keyframes show_technologies {
+    to
+    {
+        transform: translateY(-28px);  
+    }
+}
+
+main section .aboute-me img
+{
+    max-width: 45px;
+    object-fit: cover;
+}
+
