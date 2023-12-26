@@ -224,12 +224,12 @@ main section .about .about-content .socials
     align-items: center;
     justify-content: center;
     margin-top: 38px;
-    gap: 15px;
+    gap: 25px;
 }
 
 main section .about .about-content .socials a i
 {
-    font-size: 50px;
+    font-size: 40px;
     transition: all .2s ease-in-out;
 }
 
@@ -299,7 +299,7 @@ main section .aboute-me .technologies
     align-items: center;
     justify-content: center;
     gap: 25px;
-    transform: translateY(-7px);
+    transform: translateY(-30px);
 }
 
 main section .aboute-me .technologies > span
@@ -309,6 +309,7 @@ main section .aboute-me .technologies > span
     border-right: 3px solid black;
     padding-right: 15px;
     margin-right: 60px;
+    user-select: none;
 }
 
 main section .aboute-me .technologies .technologies-options
@@ -316,7 +317,7 @@ main section .aboute-me .technologies .technologies-options
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 85px;
+    gap: 75px;
     
 }
 
@@ -331,17 +332,24 @@ main section .aboute-me .technologies .technologies-options .img-technologies
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
+}
+
+main section .aboute-me .technologies .technologies-options .img-technologies img
+{
+    max-width: 35px;
+    object-fit: cover;
 }
 
 main section .aboute-me .technologies .technologies-options .img-technologies span
 {
     display: none;
     position: absolute;
-    top: 0;
-    background-color: white;
+    font-weight: bold;
+    top: -8px;
+    color: var(--color-secundary);
     padding: 2px 8px;
     border-radius: 4px;
-    transform: translateY(-10px);
     transition: all .1s ease-in-out;
     white-space: nowrap;
 }
@@ -361,9 +369,37 @@ main section .aboute-me .technologies .technologies-options .img-technologies sp
     }
 }
 
-main section .aboute-me img
+main section .aboute-me .about-me-description
 {
-    max-width: 45px;
-    object-fit: cover;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 55px;
+    padding-bottom: 155px;
 }
 
+main section .aboute-me .about-me-description .img-programing
+{
+    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+main section .aboute-me .about-me-description .about-me-summary
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 320px;
+}
+
+main section .aboute-me .about-me-description .about-me-summary h4
+{
+    color: var(--color-primary);
+    font-weight: bold;
+    border-right: 3px solid var(--color-primary);
+}
