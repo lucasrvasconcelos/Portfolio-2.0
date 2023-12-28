@@ -12,39 +12,52 @@
     <header>
         <div class="top-header">
             <div class="top-name">
-                <a href="#">Lucas<span class="blue-effect">.dev</span></a>
+                <a href="#home">Lucas<span class="blue-effect">.dev</span></a>
             </div>
             <nav>
-                <li><a href="">home </a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li class="contacts">
-                    <button id="active-contacts">Contacts <i class="ph ph-caret-up" id="active-contacts-icon"></i></button>
-                    <div class="contacts-info">
-                        <a href="mailto:lucasdevp@gmail.com"> mail <i class="ph ph-envelope-simple-open"></i></a>
-                        <a href="api.whatsapp.com"> WhatsApp <i class="ph ph-whatsapp-logo"></i></a>
-                    </div>
-                </li>
-                
+                <ul class="desktop-menu">
+                    <li><a href="#home">home </a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li class="contacts">
+                        <button id="active-contacts">Contacts <i class="ph ph-caret-up" id="active-contacts-icon"></i></button>
+                        <div class="contacts-info">
+                            <a href="mailto:lucasvasconcelos900@gmail.com" target="_blank"> mail <i class="ph ph-envelope-simple-open"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5585989285385" target="_blank"> WhatsApp <i class="ph ph-whatsapp-logo"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu">
+                    <li><a href="#home">home </a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+
+                    <button class="backmenu-mobile"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </ul>
+
+                <button class="openmenu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
             </nav>
         </div>
         
     </header>
     <main>
-        <section>
+        <section class="background-color-primary" id="home">
             <div class="about">
                 <div class="about-content">
                     <h1>Hello, I'm <br>
-                        <span>Lucas Rodrigues!</span></h1>
+                    <span>Lucas Rodrigues!</span></h1>
                     <p>A passionate Front-end Developer based in Fortaleza, Brazil. crafting captivating digital experiences.</p>
                     <div class="socials">
-                        <a href="" target="_blank">
+                        <a href="https://github.com/lucasrvasconcelos" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="" target="_blank">
+                        <a href="https://www.linkedin.com/in/lucas-rodrigues-9413aa186/" target="_blank">
                             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         </a>
-                        <a href="" target="_blank">
+                        <a href="https://www.instagram.com/lucasr.exe/" target="_blank">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -54,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about">
             <div class="aboute-me">
                 <div class="technologies">
                     <span>Tech Stack</span>
@@ -91,13 +104,121 @@
             </div>
         </section>
 
-        <section>
+        <section class="background-color-primary" id="projects">
             <div class="portifolio">
+
                 <div class="portifolio-title">
                     <h4>PORTFOLIO</h4>
+                    <h3>Exploring my creative world 💡</h3>
+                </div>
+
+                <div class="projects">
+
+                    <div class="project-item">
+                        <div class="image-project">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>BLUERIT 💰</h3>
+                            <p>Bluerit is a web application that enables secure and efficient cryptocurrency trading and analysis.</p>
+                            <div class="techs">
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/angular.png" alt="Angular JS">
+                                    <span>Angular</span>
+                                </div>
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/scss.png" alt="Scss">
+                                    <span>SCSS</span>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <a href="">Code <i class="fa fa-code" aria-hidden="true"></i></a>
+                                <a href="">Live Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item reverse">
+                        <div class="image-project">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>BLUERIT 💰</h3>
+                            <p>Bluerit is a web application that enables secure and efficient cryptocurrency trading and analysis.</p>
+                            <div class="techs">
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/angular.png" alt="Angular JS">
+                                    <span>Angular</span>
+                                </div>
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/scss.png" alt="Scss">
+                                    <span>SCSS</span>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <a href="">Code <i class="fa fa-code" aria-hidden="true"></i></a>
+                                <a href="">Live Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="image-project">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>BLUERIT 💰</h3>
+                            <p>Bluerit is a web application that enables secure and efficient cryptocurrency trading and analysis.</p>
+                            <div class="techs">
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/angular.png" alt="Angular JS">
+                                    <span>Angular</span>
+                                </div>
+                                <div class="techs-item">
+                                    <img src="assets/img/icons/scss.png" alt="Scss">
+                                    <span>SCSS</span>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <a href="">Code <i class="fa fa-code" aria-hidden="true"></i></a>
+                                <a href="">Live Demo <i class="fa fa-desktop" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="contacts">
+            <div class="contacts">
+                <div class="contacts-title">
+                    <h3>SAY HELLO!</h3>
+                    <h4>Feel Free to Reach Out! 🤙 </h4>
+                </div>
+                <div class="contacts-options">
+                    <div class="contacts-item">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div class="contact-details">
+                            <strong>Mail</strong>
+                            <a href="mailto:lucasvasconcelos900@gmail.com" target="_blank">lucasvasconcelos900@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contacts-item">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <div class="contact-details">
+                            <strong>WhatsApp</strong>
+                            <a href="https://api.whatsapp.com/send?phone=5585989285385" target="_blank">https://api.whatsapp.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <footer>
+            <span>© Designed by Lucas Vasconcelos</span> 
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
