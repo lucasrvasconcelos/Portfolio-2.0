@@ -15,8 +15,8 @@
     font-family: var(--font-primary);
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
 }
-
 
 body header .top-header
 {
@@ -45,7 +45,8 @@ body header .top-header .top-name a:hover .blue-effect
     color: var(--color-primary);
 }
 
-body header .top-header nav
+body header .top-header nav,
+body header .top-header ul
 {
     display: flex;
     align-items: center;
@@ -84,11 +85,13 @@ body header .top-header nav li a::after
     height: 4px;
     width: 0;
     transform: translateY(-5px);
+    transform-origin: left;
     transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 body header .top-header nav li a:hover::after
 {
+    transform-origin: right;
     width: 100%;
 }
 
@@ -171,8 +174,39 @@ body header .top-header nav .contacts .contacts-info
     }
 }
 
+
+body header .top-header ul.mobile-menu
+{
+    display: none;
+}
+
+body header .top-header .openmenu-mobile
+{
+    display: none;
+}
+
 .ph-caret-up{
     transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+section.background-color-primary
+{
+    background-color: var(--color-background);
+}
+
+section.background-color-secondary
+{
+    background-color: white;
 }
 
 
@@ -183,8 +217,8 @@ main section .about
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: var(--color-background);
-    padding: 230px 0;
+    flex-wrap: wrap-reverse;
+    padding: 230px 40px;
     gap: 95px;
 }
 
@@ -252,6 +286,8 @@ main section .about .my-photo
     background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
 }
 
+
+
 main section .about .my-photo .shape
 {
     width: 100%;
@@ -266,6 +302,7 @@ main section .about .my-photo .shape
     z-index: -1;
     transition: all .3s ease-in-out;
 }
+
 main section .about .my-photo:hover .shape
 {
     opacity: 1;
@@ -328,6 +365,7 @@ main section .aboute-me .technologies .technologies-options .img-technologies
     width: 60px;
     height: 60px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,5 +439,465 @@ main section .aboute-me .about-me-description .about-me-summary h4
 {
     color: var(--color-primary);
     font-weight: bold;
-    border-right: 3px solid var(--color-primary);
+    font-size: 17px;
+}
+
+main section .portifolio
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 0;
+}
+
+main section .portifolio .portifolio-title
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 900px;
+}
+
+main section .portifolio .portifolio-title h4
+{
+    color: var(--color-primary);
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+main section .portifolio .portifolio-title h3
+{
+    font-size: 25px;
+}
+
+main section .portifolio .projects 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 85px;
+}
+
+main section .portifolio .projects .project-item
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+main section .portifolio .projects .project-item.reverse
+{
+    flex-direction: row-reverse;
+}
+
+main section .portifolio .projects .project-item .image-project
+{
+    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+    background-size: cover;
+    border-radius: 15px;
+    width: 500px;
+}
+
+main section .portifolio .projects .project-item .project-content
+{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main section .portifolio .projects .project-item .project-content .techs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+main section .portifolio .projects .project-item .project-content .techs .techs-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
+    padding: 10px 15px;
+    user-select: none;
+    transition: all .2s ease-in-out;
+    position: relative;
+
+}
+
+main section .portifolio .projects .project-item .project-content .techs .techs-item img
+{
+    width: 30px;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+main section .portifolio .projects .project-item .project-content .links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+main section .portifolio .projects .project-item .project-content .links a,
+main section .portifolio .projects .project-item .project-content .links a i
+{
+    transition: all .2s ease-in-out;
+    font-size: 19px;
+}
+
+main section .portifolio .projects .project-item .project-content .links a:hover,
+main section .portifolio .projects .project-item .project-content .links a:hover i
+{
+    color: var(--color-primary);
+    text-decoration: underline;
+
+}
+
+section .contacts
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 130px 0;
+    width: 900px;
+}
+
+section .contacts .contacts-title
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section .contacts .contacts-title h3
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+    user-select: none;
+}
+
+section .contacts .contacts-title h4
+{
+    color: var(--color-secundary);
+    user-select: none;
+}
+
+section .contacts .contacts-options
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+section .contacts .contacts-options .contacts-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+section .contacts .contacts-options .contacts-item i
+{
+    font-size: 25px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.119);
+    padding: 15px;
+}
+
+section .contacts .contacts-options .contacts-item .contact-details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+section .contacts .contacts-options .contacts-item .contact-details a
+{
+    display: block;
+
+}
+section .contacts .contacts-options .contacts-item .contact-details a:hover
+{
+    transition: all .2s ease-in-out;
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px 0;
+    background-color: var(--color-background);
+}
+
+footer span
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1260px) {
+
+    main section .about
+    {
+        gap: 55px;
+        padding: 176px 40px;
+    }
+
+    main section .about .my-photo
+    {
+        min-width: 28em;
+        height: 28em;
+    }
+}
+
+@media (max-width: 1010px){
+
+    
+    main section .aboute-me .about-me-description 
+    {
+        flex-direction: column;    
+        padding-bottom: 15px 
+    }
+
+    main section .aboute-me .about-me-description  .img-programing
+    {
+        height: 300px;
+    }
+
+    main section .portifolio .portifolio-title
+    {
+        min-width: 100%;
+    }
+
+    main section .portifolio .projects .project-item
+    {
+        flex-direction: column;
+    }
+
+    main section .portifolio .projects .project-item.reverse
+    {
+        flex-direction: column;
+    }
+
+    main section .portifolio .projects .project-item .image-project
+    {
+        height: 300px;
+    }
+
+    section .contacts
+    {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 45px;
+    }
+
+    section .contacts .contacts-options
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section .contacts .contacts-options .contacts-item
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 660px){
+
+    body header .top-header
+    {
+        justify-content: space-between;
+        padding: 20px 25px;
+    }
+
+    body header .top-header ul.desktop-menu
+    {
+        display: none;
+    }
+
+    body header .top-header .openmenu-mobile
+    {
+        display: flex;
+    }
+
+    body header .top-header ul.mobile-menu
+    {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        z-index: 999;
+        background-color: white;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        scroll-behavior: none;
+        transition: all .3s ease-in-out;
+    }
+
+    body header .top-header ul.mobile-menu.open
+    {
+        left: 0;
+    }
+
+    body header .top-header ul.mobile-menu li
+    {
+        flex-grow: 0;
+        font-size: 20px;
+    }
+
+    body header .top-header ul.mobile-menu .backmenu-mobile
+    {
+        position: absolute;
+        top: 20px;
+        right: 37px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    body header .top-header ul.mobile-menu .backmenu-mobile i,
+    body header .top-header .openmenu-mobile i
+    {
+        font-size: 28px;
+    }
+
+    body header .top-header .openmenu-mobile
+    {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    body header .top-header button i
+    {
+        font-size: 35px;
+    }
+
+    main section .about {
+        gap: 55px;
+        padding: 141px 0px;
+        overflow: hidden;
+    }
+
+    main section .about .about-content
+    {
+        padding: 0px 18px;
+    }
+    
+    main section .about .my-photo
+    {
+        min-width: 320px;
+        height: 320px;
+    }
+
+    main section .aboute-me .technologies
+    {
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    main section .aboute-me .technologies .technologies-options
+    {
+        gap: 25px;
+    }
+
+    main section .aboute-me .technologies > span
+    {
+        border: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 3px solid black;
+    }
+
+    main section .aboute-me .about-me-description .img-programing
+    {
+        width: 320px;
+    }
+
+    main section .portifolio .portifolio-title
+    {
+        padding: 0 20px;
+    }
+
+    main section .portifolio .projects .project-item
+    {
+        max-width: 320px;
+    }
+
+    main section .portifolio .projects .project-item .project-content
+    {
+        width: fit-content;
+    }
+
+    main section .portifolio .projects .project-item .image-project
+    {
+        width: 100%;
+        background-position: center;
+    }
+
+    main section .portifolio .projects .project-item .project-content .links
+    {
+        width: 100%;
+    }
+    section .contacts
+    {
+        padding: 25px;
+    }
+    section .contacts .contacts-options .contacts-item .contact-details a
+    {
+        text-overflow: ellipsis;
+        display: block;
+        width: 221px;
+        overflow: hidden;
+    }
+
+    footer
+    {
+        padding: 35px 0;
+    }
+
+    footer span {
+        font-size: 15px;
+    }
 }
