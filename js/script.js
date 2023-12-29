@@ -1,3 +1,14 @@
+const no_js = document.querySelector("#nojs").removeAttribute("id")
+
+window.onload = function() {
+    const load = document.querySelector(".load")
+
+    setTimeout(() => {
+        load.style.display = "none"
+    }, 1000);
+    
+};
+
 
 document.addEventListener("click", (e) => {
     openMenu(e)
@@ -47,17 +58,16 @@ technologies.forEach((element) => {
 
 const openmenu = document.querySelector(".openmenu-mobile")
 const backmenu = document.querySelector(".backmenu-mobile")
+const links_mobile = document.querySelectorAll(".mobile-menu li a")
 
 openmenu.addEventListener("click", tolgle_menu)
 backmenu.addEventListener("click", tolgle_menu)
+
+links_mobile.forEach((element) => {
+    element.addEventListener("click", tolgle_menu)
+})
 
 function tolgle_menu(){
     const menu = document.querySelector(".mobile-menu")
     menu.classList.toggle("open")
 }
-
-const links_mobile = document.querySelectorAll(".mobile-menu li a")
-
-links_mobile.forEach((element) => {
-    element.addEventListener("click", tolgle_menu)
-})
