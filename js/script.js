@@ -5,7 +5,7 @@ window.onload = function() {
 
     setTimeout(() => {
         load.style.display = "none"
-    }, 1000);
+    }, 10);
     
 };
 
@@ -60,14 +60,14 @@ const openmenu = document.querySelector(".openmenu-mobile")
 const backmenu = document.querySelector(".backmenu-mobile")
 const links_mobile = document.querySelectorAll(".mobile-menu li a")
 
-openmenu.addEventListener("click", tolgle_menu)
-backmenu.addEventListener("click", tolgle_menu)
+openmenu.addEventListener("click", toggle_menu)
+backmenu.addEventListener("click", toggle_menu)
 
 links_mobile.forEach((element) => {
-    element.addEventListener("click", tolgle_menu)
+    element.addEventListener("click", toggle_menu)
 })
 
-function tolgle_menu(){
+function toggle_menu(){
     const menu = document.querySelector(".mobile-menu")
     menu.classList.toggle("open")
 }

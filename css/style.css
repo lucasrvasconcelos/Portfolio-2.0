@@ -18,6 +18,12 @@
     scroll-behavior: smooth;
 }
 
+.a-link
+{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 html body .load .nojs
 {
     display: none;
@@ -57,7 +63,6 @@ html#nojs body main
 
 .load span
 {
-    /* transform: translateX(25px); */
     font-size: 18px;
 }
 
@@ -67,11 +72,6 @@ html#nojs body main
     height: 30px;
     background-color: rgb(0, 0, 0);
     position: relative;
-    /* border-radius: 50%;
-     */
-     /* border-radius: 48% 52% 42% 58%/54% 46% 54% 46%;
-      */
-    
     border-radius: 5px;
     animation: rotate_load 5s linear infinite;
 }
@@ -100,6 +100,21 @@ html#nojs body main
         transform: scale(1.3) rotateZ(360deg);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body header .top-header
 {
@@ -301,7 +316,7 @@ main section .about
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    padding: 230px 40px;
+    padding: 200px  40px;
     gap: 95px;
 }
 
@@ -366,10 +381,9 @@ main section .about .my-photo
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+    background-image: url("../assets/img/perfil.jpg");
+    transition: all .3s ease-in-out;
 }
-
-
 
 main section .about .my-photo .shape
 {
@@ -381,10 +395,11 @@ main section .about .my-photo .shape
     border-radius: 48% 52% 42% 58%/54% 46% 54% 46%;
     outline: 10px solid var(--color-primary);
     opacity: 0.7;
-    animation: photo_rotate 7s linear infinite ;
+    animation: photo_rotate 7s linear infinite;
     z-index: -1;
     transition: all .3s ease-in-out;
 }
+
 
 main section .about .my-photo:hover .shape
 {
@@ -502,7 +517,7 @@ main section .aboute-me .about-me-description
 
 main section .aboute-me .about-me-description .img-programing
 {
-    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
+    background-image: url("../assets/img/projects/programming.png");
     background-size: cover;
     background-position: center;
     width: 500px;
@@ -587,11 +602,12 @@ main section .portifolio .projects .project-item.reverse
 
 main section .portifolio .projects .project-item .image-project
 {
-    background-image: url("https://sitechecker.pro/wp-content/uploads/2023/06/404-status-code.png");
-    background-size: cover;
+    background-color: var(--color-background);
     border-radius: 15px;
     width: 500px;
     object-fit: cover;
+    overflow: hidden;
+
 }
 
 main section .portifolio .projects .project-item .image-project .image-project-item
@@ -599,6 +615,12 @@ main section .portifolio .projects .project-item .image-project .image-project-i
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+main section .portifolio .projects .project-item .image-project .image-project-item:hover
+{
+    transform: scale(1.03);
 }
 
 main section .portifolio .projects .project-item .project-content
@@ -759,6 +781,10 @@ footer span
     font-weight: bold;
 }
 
+footer span a
+{
+
+}
 
 @media (max-width: 1260px) {
 
