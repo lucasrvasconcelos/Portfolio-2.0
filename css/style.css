@@ -540,7 +540,7 @@ main section .aboute-me .about-me-description .about-me-summary h4
     font-size: 17px;
 }
 
-main section .portifolio
+main section .portfolio
 {
     display: flex;
     align-items: center;
@@ -549,7 +549,7 @@ main section .portifolio
     padding: 75px 0;
 }
 
-main section .portifolio .portifolio-title
+main section .portfolio .portfolio-title
 {
     display: flex;
     align-items: flex-start;
@@ -559,7 +559,7 @@ main section .portifolio .portifolio-title
     min-width: 900px;
 }
 
-main section .portifolio .portifolio-title h4
+main section .portfolio .portfolio-title h4
 {
     color: var(--color-primary);
     font-weight: bold;
@@ -567,12 +567,12 @@ main section .portifolio .portifolio-title h4
     font-size: 17px;
 }
 
-main section .portifolio .portifolio-title h3
+main section .portfolio .portfolio-title h3
 {
     font-size: 25px;
 }
 
-main section .portifolio .projects 
+main section .portfolio .projects 
 {
     display: flex;
     align-items: center;
@@ -582,7 +582,7 @@ main section .portifolio .projects
     margin-top: 85px;
 }
 
-main section .portifolio .projects .project-item
+main section .portfolio .projects .project-item
 {
     display: flex;
     align-items: stretch;
@@ -595,12 +595,12 @@ main section .portifolio .projects .project-item
     background-color: white;
 }
 
-main section .portifolio .projects .project-item.reverse
+main section .portfolio .projects .project-item.reverse
 {
     flex-direction: row-reverse;
 }
 
-main section .portifolio .projects .project-item .image-project
+main section .portfolio .projects .project-item .image-project
 {
     background-color: var(--color-background);
     border-radius: 15px;
@@ -610,7 +610,7 @@ main section .portifolio .projects .project-item .image-project
 
 }
 
-main section .portifolio .projects .project-item .image-project .image-project-item
+main section .portfolio .projects .project-item .image-project .image-project-item
 {
     object-fit: cover;
     width: 100%;
@@ -618,12 +618,12 @@ main section .portifolio .projects .project-item .image-project .image-project-i
     transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
-main section .portifolio .projects .project-item .image-project .image-project-item:hover
+main section .portfolio .projects .project-item .image-project .image-project-item:hover
 {
     transform: scale(1.03);
 }
 
-main section .portifolio .projects .project-item .project-content
+main section .portfolio .projects .project-item .project-content
 {
     width: 320px;
     display: flex;
@@ -633,7 +633,7 @@ main section .portifolio .projects .project-item .project-content
     gap: 25px;
 }
 
-main section .portifolio .projects .project-item .project-content .techs
+main section .portfolio .projects .project-item .project-content .techs
 {
     display: flex;
     align-items: center;
@@ -642,7 +642,7 @@ main section .portifolio .projects .project-item .project-content .techs
     gap: 15px;
 }
 
-main section .portifolio .projects .project-item .project-content .techs .techs-item
+main section .portfolio .projects .project-item .project-content .techs .techs-item
 {
     display: flex;
     align-items: center;
@@ -656,7 +656,7 @@ main section .portifolio .projects .project-item .project-content .techs .techs-
     flex-grow: 1;
 }
 
-main section .portifolio .projects .project-item .project-content .techs .techs-item img
+main section .portfolio .projects .project-item .project-content .techs .techs-item img
 {
     width: 30px;
     height: 30px;
@@ -664,7 +664,7 @@ main section .portifolio .projects .project-item .project-content .techs .techs-
 }
 
 
-main section .portifolio .projects .project-item .project-content .links
+main section .portfolio .projects .project-item .project-content .links
 {
     display: flex;
     align-items: center;
@@ -673,15 +673,15 @@ main section .portifolio .projects .project-item .project-content .links
     gap: 25px;
 }
 
-main section .portifolio .projects .project-item .project-content .links a,
-main section .portifolio .projects .project-item .project-content .links a i
+main section .portfolio .projects .project-item .project-content .links a,
+main section .portfolio .projects .project-item .project-content .links a i
 {
     transition: all .2s ease-in-out;
     font-size: 19px;
 }
 
-main section .portifolio .projects .project-item .project-content .links a:hover,
-main section .portifolio .projects .project-item .project-content .links a:hover i
+main section .portfolio .projects .project-item .project-content .links a:hover,
+main section .portfolio .projects .project-item .project-content .links a:hover i
 {
     color: var(--color-primary);
     text-decoration: underline;
@@ -815,27 +815,27 @@ footer span a
         height: 300px;
     }
 
-    main section .portifolio .portifolio-title
+    main section .portfolio .portfolio-title
     {
         min-width: 100%;
     }
 
-    main section .portifolio .projects .project-item
+    main section .portfolio .projects .project-item
     {
         flex-direction: column;
     }
 
-    main section .portifolio .projects .project-item.reverse
+    main section .portfolio .projects .project-item.reverse
     {
         flex-direction: column;
     }
 
-    main section .portifolio .projects .project-item .project-content
+    main section .portfolio .projects .project-item .project-content
     {
         width: 500px;
     }
 
-    main section .portifolio .projects .project-item .image-project
+    main section .portfolio .projects .project-item .image-project
     {
         height: 300px;
     }
@@ -978,28 +978,28 @@ footer span a
         width: 320px;
     }
 
-    main section .portifolio .portifolio-title
+    main section .portfolio .portfolio-title
     {
         padding: 0 20px;
     }
 
-    main section .portifolio .projects .project-item
+    main section .portfolio .projects .project-item
     {
         max-width: 320px;
     }
 
-    main section .portifolio .projects .project-item .project-content
+    main section .portfolio .projects .project-item .project-content
     {
         width: fit-content;
     }
 
-    main section .portifolio .projects .project-item .image-project
+    main section .portfolio .projects .project-item .image-project
     {
         width: 100%;
         background-position: center;
     }
 
-    main section .portifolio .projects .project-item .project-content .links
+    main section .portfolio .projects .project-item .project-content .links
     {
         width: 100%;
     }
