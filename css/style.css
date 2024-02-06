@@ -2,7 +2,8 @@
 
 :root
 {
-    --color-primary: #1A73E8;
+    /* --color-primary: #1A73E8; */
+    --color-primary: #0081FF;
     --color-secundary: rgba(0, 0, 0, 0.822);
     --color-background: #1a73e80f;
     --font-primary: 'Poppins', sans-serif;;
@@ -101,21 +102,6 @@ html#nojs body main
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body header .top-header
 {
     display: flex;
@@ -136,9 +122,10 @@ body header .top-header .top-name a
 {
     font-weight: 900;
     font-size: 20px;
+    
 }
 
-body header .top-header .top-name a:hover .blue-effect
+body header .top-header .top-name a .blue-effect
 {
     color: var(--color-primary);
 }
@@ -381,30 +368,28 @@ main section .about .my-photo
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("../assets/img/perfil.jpg");
+    background-image: url("../assets/img/foto-lucas-transformed.png");
+    background-color: var(--color-primary);
+    outline: 10px solid var(--color-primary);
     transition: all .3s ease-in-out;
+    border-radius: 54% 46% 54% 46%/48% 52% 42% 58%;
+    border: 3px solid white;
 }
 
 main section .about .my-photo .shape
 {
     width: 100%;
     height: 100%;
-    background-color: #1a73e89e;
+    background-color: var(--color-primary);
     position: absolute;
     
     border-radius: 48% 52% 42% 58%/54% 46% 54% 46%;
     outline: 10px solid var(--color-primary);
-    opacity: 0.7;
     animation: photo_rotate 7s linear infinite;
     z-index: -1;
     transition: all .3s ease-in-out;
 }
 
-
-main section .about .my-photo:hover .shape
-{
-    opacity: 1;
-}
 
 @keyframes photo_rotate {
     0%
